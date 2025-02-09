@@ -1,50 +1,68 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { crispData } from "../crispData";
 
-interface SpinWheelProps {
-  onSpin: (flavor: string) => void;
-}
-
-const SpinWheel: React.FC<SpinWheelProps> = ({ onSpin }) => {
+const SpinWheel: React.FC = () => {
+  const [selectedCrisp, setSelectedCrisp] = useState<{ flavor: string; image: string } | null>(null);
   const [isSpinning, setIsSpinning] = useState(false);
 
-  const flavors = [
-    'Cheese & Onion',
-    'Salt & Vinegar',
-    'Barbecue',
-    'Prawn Cocktail',
-    'Sour Cream & Onion',
-    'Sweet Chili',
-    'Ready Salted',
-    'Beef & Onion',
-  ];
+  // Pick a random crisp
+  const getRandomCrisp = () => {
+    return crispData[Math.floor(Math.random() * crispData.length)];
+  };
 
+  // Initialize with a random crisp on page load
+  useEffect(() => {
+    setSelectedCrisp(getRandomCrisp());
+  }, []);
+
+  // Handle spin event
   const spinWheel = () => {
     if (isSpinning) return;
-
     setIsSpinning(true);
-    const randomIndex = Math.floor(Math.random() * flavors.length);
+
+    let spinInterval = setInterval(() => {
+      setSelectedCrisp(getRandomCrisp());
+    }, 200); // Change crisp every 200ms
+
     setTimeout(() => {
-      onSpin(flavors[randomIndex]);
+      clearInterval(spinInterval); // Stop changing crisps
+      setSelectedCrisp(getRandomCrisp()); // Set final crisp
       setIsSpinning(false);
-    }, 2000);
+    }, 5000); // 5 seconds total spin duration
   };
 
   return (
-    <div className="spinwheel-container">
-      <motion.div
-        className="wheel w-48 h-48 rounded-full border-4 border-white flex items-center justify-center"
-        animate={{ rotate: isSpinning ? 720 : 0 }}
-        transition={{ duration: 2, ease: 'easeOut' }}
-      >
-        <span className="text-xl text-white">Spin Me!</span>
-      </motion.div>
+    <div className="spinwheel-container flex flex-col items-center">
+      {selectedCrisp && (
+        <>
+          {/* Crisp Image Spins */}
+          <motion.div
+            className="wheel w-48 h-48 rounded-full border-4 border-white flex items-center justify-center bg-gray-100"
+            animate={isSpinning ? { rotate: 1440 } : {}}
+            transition={isSpinning ? { duration: 5, ease: "easeOut" } : {}}
+          >
+            <img
+              src={selectedCrisp.image}
+              alt={selectedCrisp.flavor}
+              className="w-40 h-40 object-contain"
+            />
+          </motion.div>
+
+          {/* Crisp Flavor Name */}
+          <h2 className="mt-4 text-3xl font-semibold text-white">
+            {selectedCrisp.flavor}
+          </h2>
+        </>
+      )}
+
+      {/* Spin Button */}
       <button
         onClick={spinWheel}
         disabled={isSpinning}
         className="mt-6 px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200"
       >
-        {isSpinning ? 'Spinning...' : 'Spin the Wheel'}
+        {isSpinning ? "Spinning..." : "Spin the Wheel"}
       </button>
     </div>
   );
