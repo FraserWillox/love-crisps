@@ -38,19 +38,19 @@ const SpinWheel: React.FC = () => {
         <>
           {/* Crisp Image Spins */}
           <motion.div
-            className="wheel w-48 h-48 rounded-full border-4 border-white flex items-center justify-center bg-gray-100"
+            className="wheel w-50 h-50 rounded-full border-4 border-white flex items-center justify-center bg-gray-100"
             animate={isSpinning ? { rotate: 1440 } : {}}
             transition={isSpinning ? { duration: 5, ease: "easeOut" } : {}}
           >
             <img
               src={selectedCrisp.image}
               alt={selectedCrisp.flavor}
-              className="w-40 h-40 object-contain"
+              className="w-80 h-80 object-contain"
             />
           </motion.div>
 
           {/* Crisp Flavor Name */}
-          <h2 className="mt-4 text-3xl font-semibold text-white">
+          <h2 className="mt-10 text-3xl font-semibold text-white">
             {selectedCrisp.flavor}
           </h2>
         </>
@@ -60,7 +60,7 @@ const SpinWheel: React.FC = () => {
       <button
         onClick={spinWheel}
         disabled={isSpinning}
-        className="mt-6 px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200"
+        className="mt-10 px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200"
       >
         {isSpinning ? "Spinning..." : "Spin the Wheel"}
       </button>

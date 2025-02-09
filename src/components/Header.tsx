@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <FloatingCrispPackets />
 
       {/* SpinWheel Component */}
-      <div className="mt-10">
+      <div>
         <SpinWheel />
       </div>
     </div>
