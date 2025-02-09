@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# LoveCrisps.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LoveCrisps.com is a fun and interactive website that helps crisp lovers decide which flavor to enjoy next! Featuring smooth animations, creative UI, and vibrant designs, it showcases the potential of modern frontend development.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Spin-the-Wheel Game**: Randomly select a crisp flavor to try!
+- **Vibrant Crisp Designs**: Unique fictional crisp packets for each flavor.
+- **Interactive Animations**: Smooth transitions and hover effects.
+- **Responsive Design**: Fully optimized for desktop and mobile devices.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**: React (TypeScript)
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Build Tool**: Vite
+- **Hosting**: Vercel/Netlify
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🧑‍💻 How to Run the Project Locally
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [Node.js](https://nodejs.org) (v14 or later)
+- [Git](https://git-scm.com)
+
+### Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/FraserWillox/love-crisps.git
+   cd love-crisps
+   ```
+
+### Install Dependencies
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Run the Development Server
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+### Open your browser and navigate to:
+
+http://localhost:5173

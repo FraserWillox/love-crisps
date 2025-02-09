@@ -1,0 +1,23 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 55 500 78"
+  class="w-full h-auto"
+>
+  <!-- Adjusted curve path for a shallower arch -->
+  <path
+    id="curve"
+    d="M50,150 Q250,50 450,150"
+    fill="transparent"
+    stroke="transparent"
+  />
+  <text
+    font-size="64"
+    font-weight="bold"
+    fill="white"
+    text-anchor="middle"
+  >
+    <textPath href="#curve" startOffset="50%">
+      Love Crisps
+    </textPath>
+  </text>
+</svg>
