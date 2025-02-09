@@ -1,4 +1,3 @@
-// Header.tsx
 import React from 'react';
 import SpinWheel from './SpinWheel';
 import LoveCrispsSVG from '../assets/LoveCrisps.svg';
