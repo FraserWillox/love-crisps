@@ -1,23 +1,27 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 55 500 78"
+  viewBox="0 60 500 75"
   class="w-full h-auto"
 >
-  <!-- Adjusted curve path for a shallower arch -->
-  <path
-    id="curve"
-    d="M50,150 Q250,50 450,150"
-    fill="transparent"
-    stroke="transparent"
-  />
-  <text
-    font-size="64"
-    font-weight="bold"
-    fill="white"
-    text-anchor="middle"
-  >
-    <textPath href="#curve" startOffset="50%">
-      Love Crisps
-    </textPath>
-  </text>
+  <!-- Background Gradient -->
+  <defs>
+    <path id="curve" d="M50,150 Q250,50 450,150" fill="transparent" />
+  </defs>
+
+  <!-- 3D Text Effect with Curved Path -->
+  <g font-family="Comic Sans MS, cursive" font-weight="bold" font-size="48" text-anchor="middle">
+    <!-- Red Shadow for 3D Effect -->
+    <text>
+      <textPath href="#curve" fill="#D22B2B" startOffset="51%" dx="4" dy="4" opacity="0.8">
+        LOVE CRISPS
+      </textPath>
+    </text>
+
+    <!-- Main Text -->
+    <text>
+      <textPath href="#curve" fill="#FFFFFF" startOffset="50%">
+        LOVE CRISPS
+      </textPath>
+    </text>
+  </g>
 </svg>

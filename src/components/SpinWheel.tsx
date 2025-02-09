@@ -60,10 +60,10 @@ const SpinWheel: React.FC = () => {
       <button
         onClick={spinWheel}
         disabled={isSpinning}
-        className="mt-10 px-10 py-5 bg-white text-black font-bold rounded-lg text-xl hover:bg-gray-200"
+        className="mt-10 px-10 py-5 bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 text-white font-bold rounded-full text-xl hover:scale-110 transition-transform duration-300 shadow-lg animate-pulse"
       >
-        {isSpinning ? "Spinning..." : "Spin the Wheel"}
-      </button>
+        {isSpinning ? "Spinning..." : "Click for Random Crisps!"}
+</button>
     </div>
   );
 };
