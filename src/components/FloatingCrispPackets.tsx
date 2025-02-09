@@ -12,61 +12,121 @@ import SweetChilli from "../assets/crisps/sweet-chilli.png";
 const FloatingCrispPackets: React.FC = () => {
   return (
     <>
+
+    {/* Left Hand Side */}
       <motion.img
         src={CheeseAndOnion}
         alt="Crisp"
-        className="absolute top-10 left-5 w-16"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3 }}
-      />
-      <motion.img
-        src={SaltAndVinegar}
-        alt="Crisp"
-        className="absolute top-10 right-5 w-16"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3.5 }}
-      />
-      <motion.img
-        src={Barbeque}
-        alt="Crisp"
-        className="absolute top-40 left-10 w-16"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3 }}
-      />
-      <motion.img
-        src={BeefAndOnion}
-        alt="Crisp"
-        className="absolute top-40 right-10 w-16"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3.5 }}
-      />
-      <motion.img
-        src={PrawnCocktail}
-        alt="Crisp"
-        className="absolute top-70 left-5 w-16"
+        className="absolute top-20 left-20 w-16"
         animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 3 }}
       />
       <motion.img
         src={ReadySalted}
         alt="Crisp"
-        className="absolute top-70 right-5 w-16"
+        className="absolute top-40 left-90 w-16"
         animate={{ y: [0, -10, 0] }}
-        transition={{ repeat: Infinity, duration: 3.5 }}
+        transition={{ repeat: Infinity, duration: 3 }}
       />
       <motion.img
-        src={SourCreamAndOnion}
+        src={Barbeque}
         alt="Crisp"
-        className="absolute top-100 left-10 w-16"
+        className="absolute top-60 left-55 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+      <motion.img
+        src={PrawnCocktail}
+        alt="Crisp"
+        className="absolute top-80 left-20 w-16"
         animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 3 }}
       />
       <motion.img
         src={SweetChilli}
         alt="Crisp"
-        className="absolute top-100 right-10 w-16"
+        className="absolute top-100 left-90 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+      <motion.img
+        src={SourCreamAndOnion}
+        alt="Crisp"
+        className="absolute top-120 left-55 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+       <motion.img
+        src={SaltAndVinegar}
+        alt="Crisp"
+        className="absolute top-140 left-20 w-16"
         animate={{ y: [0, -10, 0] }}
         transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+      <motion.img
+        src={BeefAndOnion}
+        alt="Crisp"
+        className="absolute top-160 left-90 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+
+      {/* Right Hand Side */}
+      <motion.img
+        src={SaltAndVinegar}
+        alt="Crisp"
+        className="absolute top-20 right-20 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+      <motion.img
+        src={SourCreamAndOnion}
+        alt="Crisp"
+        className="absolute top-40 right-90 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+      <motion.img
+        src={BeefAndOnion}
+        alt="Crisp"
+        className="absolute top-60 right-55 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+      <motion.img
+        src={PrawnCocktail}
+        alt="Crisp"
+        className="absolute top-80 right-20 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+      <motion.img
+        src={ReadySalted}
+        alt="Crisp"
+        className="absolute top-100 right-90 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+      <motion.img
+        src={SweetChilli}
+        alt="Crisp"
+        className="absolute top-120 right-55 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3.5 }}
+      />
+      <motion.img
+        src={CheeseAndOnion}
+        alt="Crisp"
+        className="absolute top-140 right-20 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
+      />
+      <motion.img
+        src={Barbeque}
+        alt="Crisp"
+        className="absolute top-160 right-90 w-16"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ repeat: Infinity, duration: 3 }}
       />
     </>
   );

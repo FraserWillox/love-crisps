@@ -21,7 +21,7 @@ const SpinWheel: React.FC = () => {
     if (isSpinning) return;
     setIsSpinning(true);
 
-    let spinInterval = setInterval(() => {
+    const spinInterval = setInterval(() => {
       setSelectedCrisp(getRandomCrisp());
     }, 200); // Change crisp every 200ms
 
