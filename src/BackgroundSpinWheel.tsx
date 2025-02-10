@@ -2,7 +2,7 @@ import React from "react";
 
 const BackgroundSpinWheel: React.FC = () => {
   return (
-    <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+    <div className="absolute flex items-center justify-center overflow-hidden">
       <svg
         width="4000"
         height="4000"
@@ -11,19 +11,18 @@ const BackgroundSpinWheel: React.FC = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g clipPath="url(#clip0_324_499)">
-          <rect width="1000" height="1000" fill="white" />
+          <rect width="4000" height="4000" fill="white" />
 
 
 
-
+{/* 
 
 pinkish is 251, 118, 122 in hexidecimal is #FB767A
 Green is 132, 186, 119 in hexidecimal is #84BA77
 brown dark is 119, 90, 82 in hexidecimal is #775A52
-{/* Green Light is 173, 237, 195 in hexidecimal is #ADEBC3 */}
 redish is 255, 92, 100 in hexidecimal is #FF5C64
 Turqoise is 61, 176, 167 in hexidecimal is #3DB0A7
-brown is 192, 151, 106 in hexidecimal is #C0976A
+brown is 192, 151, 106 in hexidecimal is #C0976A */}
 
 
           {/* Spin Wheel Segments - Each with animation */}
@@ -54,7 +53,7 @@ brown is 192, 151, 106 in hexidecimal is #C0976A
         </g>
         <defs>
           <clipPath id="clip0_324_499">
-            <rect width="1000" height="1000" fill="white" />
+            <rect width="4000" height="4000" fill="white" />
           </clipPath>
         </defs>
       </svg>

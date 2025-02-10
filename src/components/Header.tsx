@@ -11,10 +11,9 @@ const Header: React.FC = () => {
       <BackgroundSpinWheel />
 
       {/* Content Wrapper - Ensures content is above the spinning wheel */}
-      <div className=" z-10 ">
+      <div className="z-10">
         {/* Love Crisps Arched SVG */}
         <img src={LoveCrispsText} alt="Love Crisps" className="w-280 h-auto" />
-
         {/* Floating Crisp Packets */}
         <FloatingCrispPackets />
 

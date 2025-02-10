@@ -28,6 +28,7 @@ viewBox="0 0 500 200" width="500" height="200"
                 animation-delay: 2s;
                 transform-origin: center;
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+                position: relative;
             }
         </style>
         <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
