@@ -1,6 +1,6 @@
 import React from 'react';
 import SpinWheel from './SpinWheel';
-import LoveCrispsSVG from '../assets/LoveCrisps.svg';
+import LoveCrispsText from '../assets/Love-Crisps.svg';
 import FloatingCrispPackets from './FloatingCrispPackets';
 
 const Header: React.FC = () => {
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       className="relative flex flex-col items-center justify-center bg-gradient-to-b from-[#113C9C] via-[#149CAE] to-[#92BB85] text-center py-10 min-h-screen"
     >
       {/* Love Crisps Arched SVG */}
-      <img src={LoveCrispsSVG} alt="Love Crisps" className="w-280 h-auto" />
+      <img src={LoveCrispsText} alt="Love Crisps" className="w-280 h-auto" />
 
       {/* Floating Crisp Packets */}
       <FloatingCrispPackets />
