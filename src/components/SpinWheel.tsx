@@ -50,7 +50,7 @@ const SpinWheel: React.FC = () => {
           </motion.div>
 
           {/* Crisp Flavor Name */}
-          <h2 className="mt-10 text-4xl font-extrabold text-white font-['Comic Sans MS', 'cursive']">
+          <h2 className="mt-10 z-20 text-4xl font-extrabold text-white font-['Comic Sans MS', 'cursive']">
             {selectedCrisp.flavor}
           </h2>
         </>
@@ -58,11 +58,11 @@ const SpinWheel: React.FC = () => {
 
       {/* Spin Button */}
       <button
-        onClick={spinWheel}
-        disabled={isSpinning}
-        className="mt-10 px-10 py-5 bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 text-white font-bold rounded-full text-xl hover:scale-110 transition-transform duration-300 shadow-lg animate-pulse"
-      >
-        {isSpinning ? "Spinning..." : "Click for Random Crisps!"}
+  onClick={spinWheel}
+  disabled={isSpinning}
+  className="mt-10 px-10 py-5 bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 text-white font-bold rounded-full text-xl shadow-lg transition-transform duration-300 hover:scale-110 animate-text-grow"
+>
+  {isSpinning ? "Spinning..." : "Click for Random Crisps!"}
 </button>
     </div>
   );

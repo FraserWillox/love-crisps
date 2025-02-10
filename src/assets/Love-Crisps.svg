@@ -19,7 +19,7 @@ viewBox="0 0 500 200" width="500" height="200"
 
             .animated-text {
                 <!-- font-family: sans-serif; -->
-                font-size: 50px;
+                font-size: 64px;
                 font-weight: bold;
                 fill: url(#gradient);
                 stroke: black;

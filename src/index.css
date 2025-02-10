@@ -41,6 +41,25 @@ body {
   cursor: url('/public/cursorCrisp.svg') 32 32, auto;
 }
 
+button {
+  cursor: url('/public/cursorCrisp_Rotated.svg') 32 32, auto;
+  position: relative
+}
+
+button:hover {
+  filter: drop-shadow(0 0 10px rgba(212, 32, 19, 0.8)); /* Yellow glow */
+}
+
+
+@keyframes textGrow {
+  0%, 100% { font-size: 1.25rem; } /* text-xl */
+  50% { font-size: 1.5rem; } /* text-2xl */
+}
+
+.animate-text-grow {
+  animation: textGrow 1.5s infinite ease-in-out;
+}
+
 
 /* body {
   cursor: none;

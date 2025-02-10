@@ -11,16 +11,16 @@ import SweetChilli from "../assets/crisps/sweet-chilli.png";
 
 const leftPositions = [
   { top: "10%", left: "10%", image: CheeseAndOnion },
-  { top: "30%", left: "15%", image: ReadySalted },
-  { top: "50%", left: "5%", image: Barbeque },
-  { top: "70%", left: "10%", image: PrawnCocktail },
+  { top: "33%", left: "15%", image: ReadySalted },
+  { top: "56%", left: "5%", image: Barbeque },
+  { top: "80%", left: "10%", image: PrawnCocktail },
 ];
 
 const rightPositions = [
   { top: "10%", right: "10%", image: SaltAndVinegar },
-  { top: "30%", right: "15%", image: SourCreamAndOnion },
-  { top: "50%", right: "5%", image: BeefAndOnion },
-  { top: "70%", right: "10%", image: SweetChilli },
+  { top: "33%", right: "15%", image: SourCreamAndOnion },
+  { top: "56%", right: "5%", image: BeefAndOnion },
+  { top: "80%", right: "10%", image: SweetChilli },
 ];
 
 const floatingAnimation = {
@@ -37,7 +37,7 @@ const FloatingCrispPackets: React.FC = () => {
           key={`left-${index}`}
           src={image}
           alt="Crisp"
-          className="absolute w-16 sm:w-20 md:w-24"
+          className="absolute w-16 sm:w-20 md:w-24 z-[-1]"
           style={{ top, left }}
           {...floatingAnimation}
         />
@@ -49,7 +49,7 @@ const FloatingCrispPackets: React.FC = () => {
           key={`right-${index}`}
           src={image}
           alt="Crisp"
-          className="absolute w-16 sm:w-20 md:w-24"
+          className="absolute w-16 sm:w-20 md:w-24 z-[-1]"
           style={{ top, right }}
           {...floatingAnimation}
         />
