@@ -3,10 +3,14 @@ import BackgroundSpinWheel from '../BackgroundSpinWheel';
 import SpinWheel from './SpinWheel';
 import LoveCrispsText from '../assets/Love-Crisps.svg';
 import FloatingCrispPackets from './FloatingCrispPackets';
+import CrispCursor from './CrispCursor';
 
 const Header: React.FC = () => {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
+      {/* Cursor of mouse */}
+      <CrispCursor />
+
       {/* Background Spin Wheel */}
       <BackgroundSpinWheel />
 

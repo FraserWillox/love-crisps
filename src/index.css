@@ -26,6 +26,28 @@
 .animate-lighten:nth-child(12) { animation-delay: 2.2s; }
 
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+body {
+  cursor: url('/public/cursorCrisp.svg') 32 32, auto;
+}
+
+
+/* body {
+  cursor: none;
+} */
+
+
+
 /* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
