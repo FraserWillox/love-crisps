@@ -1,22 +1,27 @@
 import React from 'react';
+import BackgroundSpinWheel from '../BackgroundSpinWheel';
 import SpinWheel from './SpinWheel';
 import LoveCrispsText from '../assets/Love-Crisps.svg';
 import FloatingCrispPackets from './FloatingCrispPackets';
 
 const Header: React.FC = () => {
   return (
-    <div
-      className="relative flex flex-col items-center justify-center bg-gradient-to-b from-[#113C9C] via-[#149CAE] to-[#92BB85] text-center py-10 min-h-screen"
-    >
-      {/* Love Crisps Arched SVG */}
-      <img src={LoveCrispsText} alt="Love Crisps" className="w-280 h-auto" />
+    <div className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
+      {/* Background Spin Wheel */}
+      <BackgroundSpinWheel />
 
-      {/* Floating Crisp Packets */}
-      <FloatingCrispPackets />
+      {/* Content Wrapper - Ensures content is above the spinning wheel */}
+      <div className=" z-10 ">
+        {/* Love Crisps Arched SVG */}
+        <img src={LoveCrispsText} alt="Love Crisps" className="w-280 h-auto" />
 
-      {/* SpinWheel Component */}
-      <div>
-        <SpinWheel />
+        {/* Floating Crisp Packets */}
+        <FloatingCrispPackets />
+
+        {/* SpinWheel Component */}
+        <div>
+          <SpinWheel />
+        </div>
       </div>
     </div>
   );
