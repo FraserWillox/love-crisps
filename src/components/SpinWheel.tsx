@@ -31,7 +31,7 @@ const SpinWheel: React.FC = () => {
       clearInterval(spinInterval); // Stop changing crisps
       const finalCrisp = getRandomCrisp();
       setSelectedCrisp(finalCrisp); // Set final crisp
-      addCrispToHistory(finalCrisp.flavor); // Add to history
+      addCrispToHistory(finalCrisp); // Add `{ flavor, image }` to history
       setIsSpinning(false);
     }, 5000); // 5 seconds total spin duration
   };
