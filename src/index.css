@@ -43,7 +43,6 @@ body {
 
 button {
   cursor: url('/public/cursorCrisp_Rotated.svg') 32 32, auto;
-  position: relative
 }
 
 button:hover {
