@@ -17,9 +17,8 @@ const Header: React.FC = () => {
       <BackgroundSpinWheel />
 
       {/* Modal - Crisp History */}
-
-          <button className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded" onClick={() => setModalOpen(true)}>Advanced Settings</button>
-          <CrispHistoryModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+      <button className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded" onClick={() => setModalOpen(true)}>Advanced History</button>
+      <CrispHistoryModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
 
 
       {/* Content Wrapper - Ensures content is above the spinning wheel */}
