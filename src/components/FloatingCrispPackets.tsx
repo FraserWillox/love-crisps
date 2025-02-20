@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Barbeque from "../assets/crisps/Barbeque.png";
+import Barbeque from "../assets/crisps/barbeque.png";
 import BeefAndOnion from "../assets/crisps/beef-and-onion.png";
 import CheeseAndOnion from "../assets/crisps/cheese-and-onion.png";
 import PrawnCocktail from "../assets/crisps/prawn-cocktail.png";

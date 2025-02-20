@@ -15,14 +15,15 @@ const BackgroundSpinWheel: React.FC = () => {
 
 
 
-{/* 
-
-pinkish is 251, 118, 122 in hexidecimal is #FB767A
-Green is 132, 186, 119 in hexidecimal is #84BA77
-brown dark is 119, 90, 82 in hexidecimal is #775A52
-redish is 255, 92, 100 in hexidecimal is #FF5C64
-Turqoise is 61, 176, 167 in hexidecimal is #3DB0A7
-brown is 192, 151, 106 in hexidecimal is #C0976A */}
+        {/* 
+        --- Colour Palette ---
+        Pinkish is 251, 118, 122 in hexidecimal is #FB767A
+        Green is 132, 186, 119 in hexidecimal is #84BA77
+        Brown dark is 119, 90, 82 in hexidecimal is #775A52
+        Redish is 255, 92, 100 in hexidecimal is #FF5C64
+        Turqoise is 61, 176, 167 in hexidecimal is #3DB0A7
+        Brown is 192, 151, 106 in hexidecimal is #C0976A 
+        */}
 
 
           {/* Spin Wheel Segments - Each with animation */}

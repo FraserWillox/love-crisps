@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CrispIcon from "../assets/crisps/Barbeque.png";
+import CrispIcon from "../assets/crisps/barbeque.png";
 
 const CrispCursor: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -15,13 +15,6 @@ const CrispCursor: React.FC = () => {
 
   return (
     <>
-      {/* Hide Default Cursor */}
-      <style>
-        {/* {`
-          body { cursor: none; }
-        `} */}
-      </style>
-
       {/* Custom Crisp Cursor */}
       <div
         className="fixed pointer-events-none w-10 h-10"
